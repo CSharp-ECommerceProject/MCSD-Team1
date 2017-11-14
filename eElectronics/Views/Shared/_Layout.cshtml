@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eElectronics - HTML eCommerce Template</title>
+    <title>eElectronics - @ViewBag.Title</title>
     <link rel="icon" href="~/Content/img/eElectronics.png">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
@@ -106,14 +106,14 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop page</a></li>
-                        <li><a href="single-product.html">Single product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="@ViewBag.Active1">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="@ViewBag.Active2">@Html.ActionLink("Product", "Index", "Product")</li>
+                        <li class="@ViewBag.Active3"><a href="single-product.html">Single product</a></li>
+                        <li class="@ViewBag.Active4"><a href="cart.html">Cart</a></li>
+                        <li class="@ViewBag.Active5"><a href="checkout.html">Checkout</a></li>
+                        <li class="@ViewBag.Active6"><a href="#">Category</a></li>
+                        <li class="@ViewBag.Active7"><a href="#">Others</a></li>
+                        <li class="@ViewBag.Active8"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
