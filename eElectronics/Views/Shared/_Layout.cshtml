@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eElectronics - @ViewBag.Title</title>
+    <title>eElectronics @ViewBag.Title</title>
     <link rel="icon" href="~/Content/img/eElectronics.png">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
@@ -17,9 +17,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
-    @*<link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">*@
     <link href="~/Content/css/owl.carousel.css" rel="stylesheet" />
     <link href="~/Content/css/responsive.css" rel="stylesheet" />
     <link href="~/Content/css/style.css" rel="stylesheet" />
@@ -108,12 +105,11 @@
                     <ul class="nav navbar-nav">
                         <li class="@ViewBag.Active1">@Html.ActionLink("Home", "Index", "Home")</li>
                         <li class="@ViewBag.Active2">@Html.ActionLink("Product", "Index", "Product")</li>
-                        <li class="@ViewBag.Active3"><a href="single-product.html">Single product</a></li>
-                        <li class="@ViewBag.Active4"><a href="cart.html">Cart</a></li>
-                        <li class="@ViewBag.Active5"><a href="checkout.html">Checkout</a></li>
-                        <li class="@ViewBag.Active6"><a href="#">Category</a></li>
-                        <li class="@ViewBag.Active7"><a href="#">Others</a></li>
-                        <li class="@ViewBag.Active8"><a href="#">Contact</a></li>
+                        <li class="@ViewBag.Active3"><a href="#">Category</a></li>
+                        <li class="@ViewBag.Active4"><a href="cart.html">Checkout</a></li>
+                        <li class="@ViewBag.Active5"><a href="checkout.html">About US</a></li>
+                        <li class="@ViewBag.Active6"><a href="#">Contact US</a></li>
+                        <li class="@ViewBag.Active7"><a href="#">Sign In</a></li>
                     </ul>
                 </div>
             </div>
