@@ -1,0 +1,76 @@
+create table Member_Roles
+(
+	Role_ID int primary key identity(1,1),
+	Role_Name NVARCHAR(50) NOT NULL
+) 
+
+ create table Members
+(
+	Member_ID int primary key identity(1,1),
+	Member_Name NVARCHAR(50) NOT NULL,
+	Member_Email nvarchar(50) not null,
+	Member_UserName nvarchar(50) not null,
+	Member_Password int not null,
+	Member_Address nvarchar(100) not null,
+	Member_Image nvarchar(Max) not null,
+	Role_ID int not null,
+	Constraint FK_Member_Role foreign key (Role_ID)  references Member_Roles(Role_ID)
+) 
+
+create table Categories
+(
+	Category_ID int primary key identity (1,1),
+	Category_Name nvarchar(50) not null
+)
+
+create table Brands 
+(
+	Brand_ID int primary key identity (1,1),
+	Brand_Name nvarchar (50)
+)
+
+create table Products
+(
+	Product_ID int primary key identity (1,1),
+	Product_Name nvarchar (50),
+	Product_Image nvarchar(Max) null
+)
+
+create table ProductDescriptions
+(
+	ProductDescriptions_ID int primary key identity (1,1),
+	Product_ID int  not null,
+	Brand_ID int  not null,
+	Category_ID int  not null,
+	Descriptions text not null,
+	price money not null,
+	Constraint FK_ProductDescriptions_Product foreign key (Product_ID)  references Products(Product_ID),
+	Constraint FK_ProductDescriptions_Brand foreign key (Brand_ID)  references Brands(Brand_ID),
+	Constraint FK_ProductDescriptions_Category foreign key (Category_ID)  references Categories(Category_ID)
+)
+
+create table ProductQuantities
+(
+	ProductQuantitiesID int primary key identity (1,1),
+	Product_ID int  not null,
+	Quantity int not null,
+	Constraint FK_ProductQuantities_Product foreign key (Product_ID) references Products(Product_ID)
+)
+
+create table Orders
+(
+	Order_ID int primary key identity (1,1),
+	Member_ID int not null,
+	Order_date date not null,
+	Constraint FK_Order_Member foreign key (Member_ID) references Members(Member_ID)
+)
+
+create table OrderDetails 
+(
+	OrderDetail_ID int primary key identity (1,1),
+	Order_ID int not null,
+	Product_ID int not null,
+	Quantity int not null default 1,
+	Constraint FK_OrderDetails_Order foreign key (Order_ID) references Orders(Order_ID),
+	Constraint FK_OrderDetails_Product foreign key (Product_ID) references Products(Product_ID)
+)

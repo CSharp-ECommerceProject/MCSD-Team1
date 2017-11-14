@@ -77,6 +77,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\eElectronics-Database.txt" />
+    <Content Include="App_Data\eElectronicsDB.mdf" />
+    <Content Include="App_Data\eElectronicsDB_log.ldf">
+      <DependentUpon>eElectronicsDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\css\owl.carousel.css" />
     <Content Include="Content\css\responsive.css" />
     <Content Include="Content\css\style.css" />
@@ -139,7 +144,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
