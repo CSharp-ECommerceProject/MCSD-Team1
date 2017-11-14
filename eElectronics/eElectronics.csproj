@@ -82,6 +82,41 @@
     <Content Include="App_Data\eElectronicsDB_log.ldf">
       <DependentUpon>eElectronicsDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Content\css\animate.min.css" />
+    <Content Include="Areas\Admin\Content\css\bootstrap.min.css" />
+    <Content Include="Areas\Admin\Content\css\demo.css" />
+    <Content Include="Areas\Admin\Content\css\light-bootstrap-dashboard.css" />
+    <Content Include="Areas\Admin\Content\css\pe-icon-7-stroke.css" />
+    <Content Include="Areas\Admin\Content\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Areas\Admin\Content\img\eElectronics-Logo.png" />
+    <Content Include="Areas\Admin\Content\img\default-avatar.png" />
+    <Content Include="Areas\Admin\Content\img\faces\face-0.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\face-1.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\face-2.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\face-3.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\face-4.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\face-5.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\face-6.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\face-7.jpg" />
+    <Content Include="Areas\Admin\Content\img\faces\tim_vector.jpe" />
+    <Content Include="Areas\Admin\Content\img\favicon.ico" />
+    <Content Include="Areas\Admin\Content\img\full-screen-image-3.jpg" />
+    <Content Include="Areas\Admin\Content\img\loading-bubbles.svg" />
+    <Content Include="Areas\Admin\Content\img\mask.png" />
+    <Content Include="Areas\Admin\Content\img\new_logo.png" />
+    <Content Include="Areas\Admin\Content\img\sidebar-1.jpg" />
+    <Content Include="Areas\Admin\Content\img\sidebar-2.jpg" />
+    <Content Include="Areas\Admin\Content\img\sidebar-3.jpg" />
+    <Content Include="Areas\Admin\Content\img\sidebar-4.jpg" />
+    <Content Include="Areas\Admin\Content\img\sidebar-5.jpg" />
+    <Content Include="Areas\Admin\Content\img\tim_80x80.png" />
+    <Content Include="Areas\Admin\Content\js\bootstrap-notify.js" />
+    <Content Include="Areas\Admin\Content\js\bootstrap-select.js" />
+    <Content Include="Areas\Admin\Content\js\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Content\js\chartist.min.js" />
+    <Content Include="Areas\Admin\Content\js\demo.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.3.2.1.min.js" />
+    <Content Include="Areas\Admin\Content\js\light-bootstrap-dashboard.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -122,6 +157,46 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
+    <Content Include="Areas\Admin\Content\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Areas\Admin\Content\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Areas\Admin\Content\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_buttons.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_cards.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_chartist.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_icons.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_inputs.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_labels.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_morphing-buttons.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_navbars.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_social-buttons.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_tabs.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_transparency.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\mixins\_vendor-prefixes.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_alerts.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_buttons.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_cards.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_chartist.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_checkbox-radio-switch.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_dropdown.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_footers.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_inputs.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_misc.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_mixins.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_navbars.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_responsive.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_sidebar-and-main-panel.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_tables.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_typography.scss" />
+    <Content Include="Areas\Admin\Content\sass\lbd\_variables.scss" />
+    <Content Include="Areas\Admin\Content\sass\light-bootstrap-dashboard.scss" />
+    <Content Include="Areas\Admin\Views\Dashboard\Dashboard.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Order.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Product.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Member.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -142,6 +217,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
@@ -162,6 +239,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
